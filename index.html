@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#081522">
+  <meta name="theme-color" content="#513c3b">
   <meta name="description" content="Приглашаем на свадьбу наших детей — Кайрата и Бекзата, 28 ноября 2026 года.">
   <title>Кайрат &amp; Бекзат · 28 ноября 2026</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23081522'/%3E%3Cpath d='M17 19c8 1 13 5 15 13 2-8 7-12 15-13-1 8-6 13-15 14-9-1-14-6-15-14Z' fill='none' stroke='%23d7b36a' stroke-width='3'/%3E%3Cpath d='M32 32v17M23 41c5 0 8 3 9 8M41 41c-5 0-8 3-9 8' fill='none' stroke='%23f4eee4' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
@@ -22,8 +22,8 @@
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
-      margin: 0;
       background: var(--ink);
+      margin: 0;
       color: var(--ivory);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 16px;
@@ -54,9 +54,8 @@
       display: flex;
       gap: .25rem;
       padding: .28rem;
-      border: 1px solid var(--line);
       border-radius: 100vmax;
-      background: rgba(8, 21, 34, .72);
+      background: rgba(81, 60, 59, .78);
       backdrop-filter: blur(8px);
     }
 
@@ -98,15 +97,15 @@
       z-index: -1;
       inset: 0;
       background:
-        radial-gradient(circle at 50% 44%, rgba(7, 19, 31, .18) 0 22%, rgba(7, 19, 31, .48) 60%, rgba(7, 19, 31, .76) 100%),
-        linear-gradient(180deg, rgba(7, 19, 31, .18), rgba(7, 19, 31, .44));
+        radial-gradient(circle at 50% 44%, rgba(81, 60, 59, .18) 0 22%, rgba(81, 60, 59, .48) 60%, rgba(81, 60, 59, .76) 100%),
+        linear-gradient(180deg, rgba(81, 60, 59, .18), rgba(81, 60, 59, .44));
     }
 
     .hero-card {
       width: min(100%, 700px);
       padding: clamp(2.25rem, 8vw, 5.25rem) clamp(1.3rem, 7vw, 4.5rem);
       border: 1px solid var(--line);
-      background: rgba(8, 21, 34, .58);
+      background: rgba(81, 60, 59, .58);
       box-shadow: var(--shadow);
       text-align: center;
       backdrop-filter: blur(5px);
@@ -183,7 +182,7 @@
       padding: .85rem 1.4rem;
       border: 1px solid var(--gold);
       border-radius: 100vmax;
-      color: #091522;
+      color: var(--ink);
       background: var(--gold-soft);
       font: inherit;
       font-weight: 750;
@@ -192,7 +191,7 @@
       transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
     }
 
-    .button:hover { transform: translateY(-2px); background: #f5dea4; box-shadow: 0 12px 30px rgba(215, 179, 106, .18); }
+    .button:hover { transform: translateY(-2px); background: var(--ivory-dim); box-shadow: 0 12px 30px rgba(149, 101, 91, .18); }
     .button:focus-visible, .text-link:focus-visible, dialog button:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
     .button svg { width: 1.05rem; height: 1.05rem; }
 
@@ -229,7 +228,7 @@
       gap: .9rem;
       align-items: center;
       margin: .35rem 0 0;
-      color: #6e5525;
+      color: #8d6257;
       font-size: .76rem;
       font-weight: 800;
       letter-spacing: .2em;
@@ -254,13 +253,13 @@
     .lead {
       max-width: 36ch;
       margin: 1.6rem 0 0;
-      color: #33414a;
+      color: #684f4d;
       font-size: clamp(1.07rem, 2.5vw, 1.28rem);
     }
 
     .countdown-wrap {
-      border-block: 1px solid rgba(8, 21, 34, .16);
-      background: #ede6da;
+      border-block: 1px solid rgba(81, 60, 59, .16);
+      background: #f3e4d8;
     }
 
     .countdown {
@@ -272,7 +271,7 @@
 
     .countdown > p {
       margin: 0 0 1.4rem;
-      color: #715a2c;
+      color: #8d6257;
       font-size: .76rem;
       font-weight: 800;
       letter-spacing: .2em;
@@ -298,7 +297,7 @@
     .countdown-item span {
       display: block;
       margin-top: .5rem;
-      color: #54606a;
+      color: #795f5b;
       font-size: .7rem;
       font-weight: 750;
       letter-spacing: .12em;
@@ -310,7 +309,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       padding: 1px;
-      background: rgba(8, 21, 34, .13);
+      background: rgba(81, 60, 59, .13);
     }
 
     .detail-card {
@@ -322,7 +321,7 @@
     .detail-card .number {
       display: block;
       margin-bottom: 2.2rem;
-      color: #876c35;
+      color: #9a6d52;
       font-size: .72rem;
       font-weight: 800;
       letter-spacing: .18em;
@@ -335,7 +334,7 @@
       font-weight: 400;
     }
 
-    .detail-card p { margin: 0; color: #4d5961; }
+    .detail-card p { margin: 0; color: #705a57; }
 
     .venue-link {
       display: inline-flex;
@@ -344,12 +343,12 @@
       gap: .4rem;
       margin-top: 1.15rem;
       padding-block: .45rem;
-      color: #72571f;
+      color: #805846;
       font-weight: 800;
       text-underline-offset: .25rem;
     }
 
-    .venue-link:hover { color: #3c2d0f; }
+    .venue-link:hover { color: var(--ink); }
 
     .rsvp-shell {
       background: var(--ink-soft);
@@ -364,23 +363,23 @@
     }
 
     .rsvp .section-label { color: var(--gold-soft); }
-    .rsvp-copy { margin: 1.5rem 0 0; color: #ccd2d5; font-size: 1.05rem; }
+    .rsvp-copy { margin: 1.5rem 0 0; color: var(--ivory-dim); font-size: 1.05rem; }
 
     .rsvp-card {
       padding: clamp(1.6rem, 5vw, 2.8rem);
       border: 1px solid var(--line);
-      background: rgba(255,255,255,.035);
+      background: rgba(255, 249, 243, .08);
     }
 
     .rsvp-card h3 { margin: 0 0 .8rem; font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 400; }
-    .rsvp-card p { margin: 0 0 1.4rem; color: #ccd2d5; }
-    .privacy { margin-top: 1rem !important; font-size: .82rem; color: #aab3b8 !important; }
+    .rsvp-card p { margin: 0 0 1.4rem; color: var(--ivory-dim); }
+    .privacy { margin-top: 1rem !important; font-size: .82rem; color: #d0b9ad !important; }
 
     footer {
       padding: 2.2rem 1.25rem;
-      border-top: 1px solid rgba(234, 212, 156, .18);
+      border-top: 1px solid rgba(238, 211, 182, .28);
       background: var(--ink);
-      color: #aeb7bd;
+      color: #d0b9ad;
       text-align: center;
       font-size: .85rem;
     }
@@ -395,10 +394,10 @@
       box-shadow: var(--shadow);
     }
 
-    dialog::backdrop { background: rgba(2, 8, 14, .78); backdrop-filter: blur(3px); }
+    dialog::backdrop { background: rgba(81, 60, 59, .78); backdrop-filter: blur(3px); }
     .dialog-inner { padding: clamp(1.7rem, 6vw, 2.7rem); }
     .dialog-inner h2 { margin: 0 0 .8rem; font-family: Georgia, "Times New Roman", serif; font-size: 2rem; font-weight: 400; }
-    .dialog-inner p { color: #ccd2d5; }
+    .dialog-inner p { color: var(--ivory-dim); }
     .dialog-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
     .button.secondary { color: var(--ivory); background: transparent; }
 
