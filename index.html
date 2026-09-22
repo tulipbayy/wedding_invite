@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#513c3b">
+  <meta name="theme-color" content="#fff9f3">
   <meta name="description" content="Приглашаем на свадьбу наших детей — Кайрата и Бекзат, 28 ноября 2026 года.">
   <title>Кайрат &amp; Бекзат · 28 ноября 2026</title>
   <meta property="og:title" content="Кайрат &amp; Бекзат · 28 ноября 2026">
@@ -16,22 +16,22 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23081522'/%3E%3Cpath d='M17 19c8 1 13 5 15 13 2-8 7-12 15-13-1 8-6 13-15 14-9-1-14-6-15-14Z' fill='none' stroke='%23d7b36a' stroke-width='3'/%3E%3Cpath d='M32 32v17M23 41c5 0 8 3 9 8M41 41c-5 0-8 3-9 8' fill='none' stroke='%23f4eee4' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
   <style>
     :root {
-      --ink: #513c3b;
-      --ink-soft: #a66f69;
-      --ivory: #fff9f3;
-      --ivory-dim: #eadbd1;
-      --gold: #b88a61;
-      --gold-soft: #eed3b6;
-      --line: rgba(149, 101, 91, .28);
-      --shadow: 0 24px 80px rgba(91, 61, 55, .16);
+      --ink: #5d4140;
+      --ink-soft: #9b6f6b;
+      --ivory: #fffdfb;
+      --ivory-dim: #f1e5df;
+      --gold: #b88762;
+      --gold-soft: #f0d6c0;
+      --line: rgba(149, 101, 91, .24);
+      --shadow: 0 24px 80px rgba(137, 96, 88, .14);
     }
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
-      background: var(--ink);
+      background: var(--ivory);
       margin: 0;
-      color: var(--ivory);
+      color: var(--ink);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 16px;
       line-height: 1.6;
@@ -62,7 +62,7 @@
       gap: .25rem;
       padding: .28rem;
       border-radius: 100vmax;
-      background: rgba(81, 60, 59, .78);
+      background: rgba(255, 253, 251, .82);
       backdrop-filter: blur(8px);
     }
 
@@ -72,7 +72,7 @@
       padding: .45rem .68rem;
       border: 0;
       border-radius: 100vmax;
-      color: var(--ivory-dim);
+      color: var(--ink-soft);
       background: transparent;
       font: inherit;
       font-size: .76rem;
@@ -104,28 +104,36 @@
       z-index: -1;
       inset: 0;
       background:
-        radial-gradient(circle at 50% 44%, rgba(81, 60, 59, .18) 0 22%, rgba(81, 60, 59, .48) 60%, rgba(81, 60, 59, .76) 100%),
-        linear-gradient(180deg, rgba(81, 60, 59, .18), rgba(81, 60, 59, .44));
+        radial-gradient(circle at 50% 44%, rgba(255, 253, 251, .68) 0 22%, rgba(255, 247, 242, .78) 60%, rgba(244, 222, 213, .9) 100%),
+        linear-gradient(180deg, rgba(255, 253, 251, .7), rgba(248, 229, 220, .84));
     }
 
     .hero-card {
       width: min(100%, 700px);
       padding: clamp(2.25rem, 8vw, 5.25rem) clamp(1.3rem, 7vw, 4.5rem);
       border: 1px solid var(--line);
-      background: rgba(81, 60, 59, .58);
+      background: rgba(255, 253, 251, .76);
       box-shadow: var(--shadow);
       text-align: center;
       backdrop-filter: blur(5px);
+      color: var(--ink);
       animation: reveal .9s ease-out both;
     }
 
     .eyebrow {
       margin: 0 0 1.6rem;
-      color: var(--gold-soft);
+      color: #a66f69;
       font-size: .78rem;
       font-weight: 700;
       letter-spacing: .25em;
       text-transform: uppercase;
+    }
+
+    .hosts {
+      margin: -1rem 0 1.6rem;
+      color: #755b58;
+      font-size: .86rem;
+      letter-spacing: .08em;
     }
 
     h1, h2, .serif {
@@ -145,7 +153,7 @@
     h1 .ampersand {
       display: block;
       margin: .06em 0;
-      color: var(--gold-soft);
+      color: #a66f69;
       font-size: .52em;
       font-style: italic;
       line-height: .65;
@@ -166,7 +174,7 @@
     }
 
     .date-lockup time {
-      color: var(--gold-soft);
+      color: #a66f69;
       font-size: clamp(.85rem, 2.4vw, 1rem);
       font-weight: 650;
       letter-spacing: .17em;
@@ -176,7 +184,7 @@
     .hero-note {
       max-width: 38ch;
       margin: 1.15rem auto 1.8rem;
-      color: var(--ivory-dim);
+      color: #755b58;
       font-size: clamp(1rem, 2.7vw, 1.15rem);
     }
 
@@ -265,8 +273,8 @@
     }
 
     .countdown-wrap {
-      border-block: 1px solid rgba(81, 60, 59, .16);
-      background: #f3e4d8;
+      border-block: 1px solid rgba(149, 101, 91, .16);
+      background: #f8eae5;
     }
 
     .countdown {
@@ -316,7 +324,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 1px;
       padding: 1px;
-      background: rgba(81, 60, 59, .13);
+      background: rgba(149, 101, 91, .13);
     }
 
     .detail-card {
@@ -358,8 +366,8 @@
     .venue-link:hover { color: var(--ink); }
 
     .rsvp-shell {
-      background: var(--ink-soft);
-      color: var(--ivory);
+      background: #f1ddd8;
+      color: var(--ink);
     }
 
     .rsvp {
@@ -369,24 +377,24 @@
       align-items: center;
     }
 
-    .rsvp .section-label { color: var(--gold-soft); }
-    .rsvp-copy { margin: 1.5rem 0 0; color: var(--ivory-dim); font-size: 1.05rem; }
+    .rsvp .section-label { color: #8d6257; }
+    .rsvp-copy { margin: 1.5rem 0 0; color: #755b58; font-size: 1.05rem; }
 
     .rsvp-card {
       padding: clamp(1.6rem, 5vw, 2.8rem);
       border: 1px solid var(--line);
-      background: rgba(255, 249, 243, .08);
+      background: rgba(255, 253, 251, .72);
     }
 
     .rsvp-card h3 { margin: 0 0 .8rem; font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 400; }
-    .rsvp-card p { margin: 0 0 1.4rem; color: var(--ivory-dim); }
-    .privacy { margin-top: 1rem !important; font-size: .82rem; color: #d0b9ad !important; }
+    .rsvp-card p { margin: 0 0 1.4rem; color: #755b58; }
+    .privacy { margin-top: 1rem !important; font-size: .82rem; color: #8d716c !important; }
 
     footer {
       padding: 2.2rem 1.25rem;
       border-top: 1px solid rgba(238, 211, 182, .28);
-      background: var(--ink);
-      color: #d0b9ad;
+      background: #f8eae5;
+      color: #8d716c;
       text-align: center;
       font-size: .85rem;
     }
@@ -396,32 +404,32 @@
       padding: 0;
       border: 1px solid var(--line);
       border-radius: 0;
-      color: var(--ivory);
-      background: var(--ink-soft);
+      color: var(--ink);
+      background: var(--ivory);
       box-shadow: var(--shadow);
     }
 
-    dialog::backdrop { background: rgba(81, 60, 59, .78); backdrop-filter: blur(3px); }
+    dialog::backdrop { background: rgba(93, 65, 64, .28); backdrop-filter: blur(3px); }
     .dialog-inner { padding: clamp(1.7rem, 6vw, 2.7rem); }
     .dialog-inner h2 { margin: 0 0 .8rem; font-family: Georgia, "Times New Roman", serif; font-size: 2rem; font-weight: 400; }
-    .dialog-inner p { color: var(--ivory-dim); }
+    .dialog-inner p { color: #755b58; }
     .dialog-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
-    .button.secondary { color: var(--ivory); background: transparent; }
+    .button.secondary { color: var(--ink); background: transparent; }
 
     .rsvp-form { display: grid; gap: 1rem; margin-top: 1.5rem; }
-    .rsvp-form label { display: grid; gap: .4rem; color: var(--ivory-dim); font-size: .85rem; font-weight: 700; }
+    .rsvp-form label { display: grid; gap: .4rem; color: #755b58; font-size: .85rem; font-weight: 700; }
     .rsvp-form input, .rsvp-form select {
       width: 100%;
       min-height: 3.2rem;
       padding: .75rem 1rem;
       border: 1px solid var(--line);
       border-radius: .35rem;
-      color: var(--ivory);
-      background: rgba(255, 249, 243, .08);
+      color: var(--ink);
+      background: #fffaf7;
       font: inherit;
     }
     .rsvp-form option { color: var(--ink); }
-    .form-status { min-height: 1.5em; margin: 0 !important; color: var(--gold-soft) !important; }
+    .form-status { min-height: 1.5em; margin: 0 !important; color: #9b6f6b !important; }
 
     @keyframes reveal {
       from { opacity: 0; transform: translateY(16px); }
@@ -480,6 +488,7 @@
     </nav>
     <div class="hero-card">
       <p class="eyebrow" data-i18n="eyebrow">Приглашение на свадьбу наших детей</p>
+      <p class="hosts" data-i18n="hosts">Организаторы: Жанар и Нуркен</p>
       <h1 id="page-title"><span data-i18n="firstName">Кайрат</span> <span class="ampersand" data-i18n="nameJoiner">&amp;</span> <span data-i18n="secondName">Бекзат</span></h1>
       <div class="date-lockup">
         <time datetime="2026-11-28" data-i18n="heroDate">28 ноября 2026</time>
@@ -580,7 +589,7 @@
         pageDescription: "Приглашаем на свадьбу наших детей — Кайрата и Бекзат, 28 ноября 2026 года.",
         firstName: "Кайрат", nameJoiner: "&", secondName: "Бекзат",
         skip: "Перейти к приглашению", languageLabel: "Выбор языка",
-        eyebrow: "Приглашение на свадьбу наших детей", heroDate: "28 ноября 2026",
+        eyebrow: "Приглашение на свадьбу наших детей", hosts: "Организаторы: Жанар и Нуркен", heroDate: "28 ноября 2026",
         heroNote: "Будем счастливы разделить этот особенный день в кругу родных и друзей.", heroRsvp: "Подтвердить участие", detailsCue: "Подробнее ↓",
         invitationLabel: "Приглашение", invitationTitle: "Разделим радость этого дня вместе.",
         invitationCopy: "Дорогие гости! Приглашаем вас стать дорогими гостями на свадебном торжестве наших детей — Кайрата и Бекзат, которое состоится в субботу, 28 ноября 2026 года.",
@@ -602,7 +611,7 @@
         pageDescription: "Балаларымыз Қайрат пен Бекзаттың 2026 жылғы 28 қарашада өтетін үйлену тойына шақырамыз.",
         firstName: "Қайрат", nameJoiner: "&", secondName: "Бекзат",
         skip: "Шақыруға өту", languageLabel: "Тілді таңдау",
-        eyebrow: "Балаларымыздың үйлену тойына шақыру", heroDate: "28 қараша 2026",
+        eyebrow: "Балаларымыздың үйлену тойына шақыру", hosts: "Той иелері: Жанар мен Нұркен", heroDate: "28 қараша 2026",
         heroNote: "Осы ерекше күнді туған-туыс пен достардың ортасында бірге атап өтуге қуаныштымыз.", heroRsvp: "Қатысатыныңызды растау", detailsCue: "Толығырақ ↓",
         invitationLabel: "Шақыру", invitationTitle: "Қуанышты күнді бірге қарсы алайық.",
         invitationCopy: "Құрметті қонақтар! Сіздерді балаларымыз Қайрат пен Бекзаттың 2026 жылғы 28 қараша, сенбі күні өтетін үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!",
@@ -624,7 +633,7 @@
         pageDescription: "We invite you to celebrate the wedding of our children, Kairat and Bekzat, on 28 November 2026.",
         firstName: "Kairat", nameJoiner: "&", secondName: "Bekzat",
         skip: "Skip to invitation", languageLabel: "Choose language",
-        eyebrow: "An invitation to our children’s wedding", heroDate: "28 November 2026",
+        eyebrow: "An invitation to our children’s wedding", hosts: "Hosts: Zhanar and Nurken", heroDate: "28 November 2026",
         heroNote: "We would be delighted to share this special day with family and friends.", heroRsvp: "Confirm attendance", detailsCue: "Details ↓",
         invitationLabel: "The invitation", invitationTitle: "Let us share the joy of this day together.",
         invitationCopy: "Dear guests, we warmly invite you to be our honoured guests at the wedding celebration of our children, Kairat and Bekzat, on Saturday, 28 November 2026.",
