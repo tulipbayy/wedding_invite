@@ -401,6 +401,21 @@
     .dialog-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
     .button.secondary { color: var(--ivory); background: transparent; }
 
+    .rsvp-form { display: grid; gap: 1rem; margin-top: 1.5rem; }
+    .rsvp-form label { display: grid; gap: .4rem; color: var(--ivory-dim); font-size: .85rem; font-weight: 700; }
+    .rsvp-form input, .rsvp-form select {
+      width: 100%;
+      min-height: 3.2rem;
+      padding: .75rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: .35rem;
+      color: var(--ivory);
+      background: rgba(255, 249, 243, .08);
+      font: inherit;
+    }
+    .rsvp-form option { color: var(--ink); }
+    .form-status { min-height: 1.5em; margin: 0 !important; color: var(--gold-soft) !important; }
+
     @keyframes reveal {
       from { opacity: 0; transform: translateY(16px); }
       to { opacity: 1; transform: translateY(0); }
@@ -535,16 +550,22 @@
   <dialog id="rsvp-dialog" aria-labelledby="dialog-title">
     <div class="dialog-inner">
       <h2 id="dialog-title" data-i18n="dialogTitle">Остался один шаг</h2>
-      <p data-i18n="dialogCopy1">Приглашение готово, но перед отправкой гостям нужно добавить ссылку на Google Форму организаторов.</p>
-      <p data-i18n="dialogCopy2">После подключения кнопка откроет форму RSVP в новой вкладке, а каждый ответ автоматически появится в Google Таблицах.</p>
-      <div class="dialog-actions">
-        <button class="button secondary" type="button" id="close-dialog" data-i18n="close">Закрыть</button>
-      </div>
+      <p data-i18n="dialogCopy1">Пожалуйста, заполните форму, чтобы мы знали, сможете ли вы прийти.</p>
+      <form class="rsvp-form" id="rsvp-form">
+        <label><span data-i18n="guestNameLabel">Ваше имя</span><input name="guestName" required autocomplete="name" data-i18n-placeholder="guestNamePlaceholder" placeholder="Введите ваше имя"></label>
+        <label><span data-i18n="companionLabel">Имя сопровождающего</span><input name="companionName" autocomplete="off" data-i18n-placeholder="companionPlaceholder" placeholder="Если будете не одни"></label>
+        <label><span data-i18n="attendanceLabel">Ваш ответ</span><select name="attendance" required><option value="" data-i18n="attendancePlaceholder">Выберите ответ</option><option value="yes" data-i18n="attendanceYes">С радостью приду</option><option value="no" data-i18n="attendanceNo">К сожалению, не смогу</option></select></label>
+        <p class="form-status" id="form-status" role="status"></p>
+        <div class="dialog-actions">
+          <button class="button" type="submit" data-i18n="submitRsvp">Отправить</button>
+          <button class="button secondary" type="button" id="close-dialog" data-i18n="close">Закрыть</button>
+        </div>
+      </form>
     </div>
   </dialog>
 
   <script>
-    const RSVP_URL = "https://docs.google.com/forms/d/e/1FAIpQLSf_-zCEmhHCUyl7nWNV8zdRqEdBPhP9oTOo1onWdv1z2pTJsw/viewform?usp=publish-editor";
+    const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbzYpRVorA8nKCPpBWHEoF6d6zzWrE-D6BQWpWQjiohaz6fhCkSnt41HrADuMC-OXVRJ/exec";
 
     const translations = {
       ru: {
@@ -564,7 +585,10 @@
         responseTitle: "Ваш ответ", responseCopy: "В форме можно указать, придёте ли вы, имена гостей, а также пожелания по питанию или доступности.", openRsvp: "Открыть форму RSVP",
         privacy: "Ответы сохраняются в приватной Google-таблице организаторов и используются только для подготовки свадьбы.",
         dialogTitle: "Остался один шаг", dialogCopy1: "Приглашение готово, но перед отправкой гостям нужно добавить ссылку на Google Форму организаторов.",
-        dialogCopy2: "После подключения кнопка откроет форму RSVP в новой вкладке, а каждый ответ автоматически появится в Google Таблицах.", close: "Закрыть"
+        dialogCopy2: "После подключения каждый ответ автоматически появится в Google Таблицах.", close: "Закрыть",
+        guestNameLabel: "Ваше имя", guestNamePlaceholder: "Введите ваше имя", companionLabel: "Имя сопровождающего", companionPlaceholder: "Если будете не одни",
+        attendanceLabel: "Ваш ответ", attendancePlaceholder: "Выберите ответ", attendanceYes: "С радостью приду", attendanceNo: "К сожалению, не смогу", submitRsvp: "Отправить",
+        formMissingEndpoint: "Форма еще не подключена к таблице.", formSending: "Отправляем...", formSuccess: "Спасибо! Ваш ответ сохранен.", formError: "Не удалось отправить ответ. Попробуйте еще раз."
       },
       kk: {
         pageTitle: "Қайрат & Бекзат · 28 қараша 2026",
@@ -583,7 +607,10 @@
         responseTitle: "Сіздің жауабыңыз", responseCopy: "Формада қатысатыныңызды, қонақтардың есімдерін және тағамға немесе қолжетімділікке қатысты тілектеріңізді көрсете аласыз.", openRsvp: "RSVP формасын ашу",
         privacy: "Жауаптар ұйымдастырушылардың жабық Google кестесінде сақталып, тек тойды дайындау үшін қолданылады.",
         dialogTitle: "Соңғы бір қадам", dialogCopy1: "Шақыру дайын, бірақ қонақтарға жібермес бұрын ұйымдастырушылардың Google Формасына сілтеме қосу керек.",
-        dialogCopy2: "Сілтеме қосылғаннан кейін RSVP формасы жаңа бетте ашылып, әр жауап Google кестесіне автоматты түрде жазылады.", close: "Жабу"
+        dialogCopy2: "Сілтеме қосылғаннан кейін әр жауап Google кестесіне автоматты түрде жазылады.", close: "Жабу",
+        guestNameLabel: "Сіздің атыңыз", guestNamePlaceholder: "Атыңызды жазыңыз", companionLabel: "Серігіңіздің аты", companionPlaceholder: "Бірге келетін болсаңыз",
+        attendanceLabel: "Сіздің жауабыңыз", attendancePlaceholder: "Жауапты таңдаңыз", attendanceYes: "Қуана қатысамын", attendanceNo: "Өкінішке қарай, келе алмаймын", submitRsvp: "Жіберу",
+        formMissingEndpoint: "Форма әзірге кестеге қосылмаған.", formSending: "Жіберілуде...", formSuccess: "Рақмет! Жауабыңыз сақталды.", formError: "Жауапты жіберу мүмкін болмады. Қайта көріңіз."
       },
       en: {
         pageTitle: "Kairat & Bekzat · 28 November 2026",
@@ -602,7 +629,10 @@
         responseTitle: "Your response", responseCopy: "The form asks whether you can attend, who will join you, and any dietary or accessibility requirements.", openRsvp: "Open RSVP form",
         privacy: "Responses are saved in the hosts’ private Google Sheet and used only to organise the wedding.",
         dialogTitle: "One final connection", dialogCopy1: "The invitation is ready, but the hosts’ Google Form link still needs to be added before invitations are sent.",
-        dialogCopy2: "Once connected, this button will open the RSVP form in a new tab and every response will appear automatically in Google Sheets.", close: "Close"
+        dialogCopy2: "Once connected, every response will appear automatically in Google Sheets.", close: "Close",
+        guestNameLabel: "Your name", guestNamePlaceholder: "Enter your name", companionLabel: "Companion's name", companionPlaceholder: "If someone is joining you",
+        attendanceLabel: "Your response", attendancePlaceholder: "Choose a response", attendanceYes: "Happily attending", attendanceNo: "Sadly, I cannot attend", submitRsvp: "Send",
+        formMissingEndpoint: "The form is not connected to the sheet yet.", formSending: "Sending...", formSuccess: "Thank you! Your response was saved.", formError: "We could not send your response. Please try again."
       }
     };
 
@@ -619,6 +649,10 @@
       document.querySelectorAll("[data-i18n-aria]").forEach((element) => {
         const value = copy[element.dataset.i18nAria];
         if (value) element.setAttribute("aria-label", value);
+      });
+      document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+        const value = copy[element.dataset.i18nPlaceholder];
+        if (value) element.setAttribute("placeholder", value);
       });
       document.querySelectorAll("[data-language]").forEach((button) => {
         button.setAttribute("aria-pressed", String(button.dataset.language === locale));
@@ -638,16 +672,31 @@
     const dialog = document.getElementById("rsvp-dialog");
     document.querySelectorAll(".js-rsvp").forEach((button) => {
       button.addEventListener("click", () => {
-        if (RSVP_URL) {
-          window.open(RSVP_URL, "_blank", "noopener,noreferrer");
-          return;
-        }
         dialog.showModal();
       });
     });
     document.getElementById("close-dialog").addEventListener("click", () => dialog.close());
     dialog.addEventListener("click", (event) => {
       if (event.target === dialog) dialog.close();
+    });
+
+    document.getElementById("rsvp-form").addEventListener("submit", async (event) => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      const status = document.getElementById("form-status");
+      const copy = translations[document.documentElement.lang] || translations.kk;
+      if (!RSVP_ENDPOINT) {
+        status.textContent = copy.formMissingEndpoint;
+        return;
+      }
+      status.textContent = copy.formSending;
+      try {
+        await fetch(RSVP_ENDPOINT, { method: "POST", mode: "no-cors", body: new FormData(form) });
+        form.reset();
+        status.textContent = copy.formSuccess;
+      } catch (_) {
+        status.textContent = copy.formError;
+      }
     });
 
     const weddingDate = new Date("2026-11-28T16:00:00");
