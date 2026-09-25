@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#fff9f3">
-  <meta name="description" content="Приглашаем на свадьбу наших детей — Кайрата и Бекзат, 28 ноября 2026 года.">
-  <title>Кайрат &amp; Бекзат · 28 ноября 2026</title>
-  <meta property="og:title" content="Кайрат &amp; Бекзат · 28 ноября 2026">
-  <meta property="og:description" content="Приглашаем на свадьбу наших детей — Кайрата и Бекзат, 28 ноября 2026 года.">
+  <meta name="description" content="Қайрат пен Бекзаттың беташарына шақырамыз. 2026 жылғы 28 қараша.">
+  <title>Қайрат &amp; Бекзат · Беташар · 28 қараша 2026</title>
+  <meta property="og:title" content="Қайрат &amp; Бекзат · Беташар · 28 қараша 2026">
+  <meta property="og:description" content="Қайрат пен Бекзаттың беташарына шақырамыз. 2026 жылғы 28 қараша.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tulipbayy.github.io/wedding_invite/">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Кайрат &amp; Бекзат · 28 ноября 2026">
-  <meta name="twitter:description" content="Приглашаем на свадьбу наших детей — Кайрата и Бекзат, 28 ноября 2026 года.">
+  <meta name="twitter:title" content="Қайрат &amp; Бекзат · Беташар · 28 қараша 2026">
+  <meta name="twitter:description" content="Қайрат пен Бекзаттың беташарына шақырамыз. 2026 жылғы 28 қараша.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23081522'/%3E%3Cpath d='M17 19c8 1 13 5 15 13 2-8 7-12 15-13-1 8-6 13-15 14-9-1-14-6-15-14Z' fill='none' stroke='%23d7b36a' stroke-width='3'/%3E%3Cpath d='M32 32v17M23 41c5 0 8 3 9 8M41 41c-5 0-8 3-9 8' fill='none' stroke='%23f4eee4' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
   <style>
     :root {
@@ -109,11 +109,8 @@
     }
 
     .hero-card {
-      width: min(100%, 700px);
+      width: min(100%, 650px);
       padding: clamp(2.25rem, 8vw, 5.25rem) clamp(1.3rem, 7vw, 4.5rem);
-      border: 1px solid var(--line);
-      background: rgba(255, 253, 251, .76);
-      box-shadow: var(--shadow);
       text-align: center;
       backdrop-filter: blur(5px);
       color: var(--ink);
@@ -121,19 +118,51 @@
     }
 
     .eyebrow {
-      margin: 0 0 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .9rem;
+      margin: 0 0 1.8rem;
       color: #a66f69;
-      font-size: .78rem;
-      font-weight: 700;
-      letter-spacing: .25em;
-      text-transform: uppercase;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.6rem, 5vw, 2.5rem);
+      font-style: italic;
+      font-weight: 400;
+      letter-spacing: 0;
+    }
+
+    .eyebrow::before, .eyebrow::after {
+      content: "";
+      width: clamp(1.5rem, 8vw, 3.2rem);
+      height: 1px;
+      background: var(--gold);
     }
 
     .hosts {
-      margin: -1rem 0 1.6rem;
+      margin: 1.2rem 0 .5rem;
       color: #755b58;
-      font-size: .86rem;
-      letter-spacing: .08em;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    .betashar-copy {
+      max-width: 35ch;
+      margin: clamp(1.5rem, 5vw, 2.4rem) auto 0;
+      color: #684f4d;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(1.1rem, 3.3vw, 1.45rem);
+      font-style: italic;
+      line-height: 1.65;
+      text-wrap: balance;
+    }
+
+    .hero-note {
+      margin: 1.4rem auto 0;
+      color: #755b58;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.2rem;
+      font-style: italic;
     }
 
     h1, h2, .serif {
@@ -152,11 +181,11 @@
 
     h1 .ampersand {
       display: block;
-      margin: .06em 0;
+      margin: .14em 0 .18em;
       color: #a66f69;
       font-size: .52em;
       font-style: italic;
-      line-height: .65;
+      line-height: .9;
     }
 
     .date-lockup {
@@ -207,14 +236,14 @@
     }
 
     .button:hover { transform: translateY(-2px); background: var(--ivory-dim); box-shadow: 0 12px 30px rgba(149, 101, 91, .18); }
-    .button:focus-visible, .text-link:focus-visible, dialog button:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+    .button:focus-visible, .text-link:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
     .button svg { width: 1.05rem; height: 1.05rem; }
 
     .scroll-cue {
       position: absolute;
       bottom: 1.3rem;
       left: 50%;
-      color: var(--gold-soft);
+      color: #a66f69;
       font-size: .72rem;
       letter-spacing: .18em;
       text-decoration: none;
@@ -257,66 +286,12 @@
       background: var(--gold);
     }
 
-    .intro h2, .rsvp h2 {
+    .rsvp h2 {
       margin: 0;
       font-size: clamp(2.75rem, 7vw, 5.5rem);
       line-height: 1;
       letter-spacing: -.045em;
       text-wrap: balance;
-    }
-
-    .lead {
-      max-width: 36ch;
-      margin: 1.6rem 0 0;
-      color: #684f4d;
-      font-size: clamp(1.07rem, 2.5vw, 1.28rem);
-    }
-
-    .countdown-wrap {
-      border-block: 1px solid rgba(149, 101, 91, .16);
-      background: #f8eae5;
-    }
-
-    .countdown {
-      width: min(1120px, calc(100% - 2.5rem));
-      margin-inline: auto;
-      padding: clamp(2.3rem, 6vw, 4rem) 0;
-      text-align: center;
-    }
-
-    .countdown > p {
-      margin: 0 0 1.4rem;
-      color: #8d6257;
-      font-size: .76rem;
-      font-weight: 800;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-    }
-
-    .countdown-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: clamp(.5rem, 3vw, 2rem);
-      max-width: 760px;
-      margin: auto;
-    }
-
-    .countdown-item strong {
-      display: block;
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(2rem, 8vw, 4.5rem);
-      font-weight: 400;
-      line-height: 1;
-    }
-
-    .countdown-item span {
-      display: block;
-      margin-top: .5rem;
-      color: #795f5b;
-      font-size: .7rem;
-      font-weight: 750;
-      letter-spacing: .12em;
-      text-transform: uppercase;
     }
 
     .details {
@@ -365,60 +340,38 @@
 
     .venue-link:hover { color: var(--ink); }
 
-    .rsvp-shell {
-      background: #f1ddd8;
-      color: var(--ink);
-    }
-
+    .rsvp-shell { background: #f1ddd8; color: var(--ink); }
     .rsvp {
       display: grid;
       grid-template-columns: 1.15fr .85fr;
       gap: clamp(2.5rem, 8vw, 7rem);
       align-items: center;
     }
-
     .rsvp .section-label { color: #8d6257; }
     .rsvp-copy { margin: 1.5rem 0 0; color: #755b58; font-size: 1.05rem; }
-
-    .rsvp-card {
-      padding: clamp(1.6rem, 5vw, 2.8rem);
-      border: 1px solid var(--line);
-      background: rgba(255, 253, 251, .72);
-    }
-
-    .rsvp-card h3 { margin: 0 0 .8rem; font-family: Georgia, "Times New Roman", serif; font-size: 1.8rem; font-weight: 400; }
-    .rsvp-card p { margin: 0 0 1.4rem; color: #755b58; }
-    .privacy { margin-top: 1rem !important; font-size: .82rem; color: #8d716c !important; }
-
-    footer {
-      padding: 2.2rem 1.25rem;
-      border-top: 1px solid rgba(238, 211, 182, .28);
-      background: #f8eae5;
-      color: #8d716c;
-      text-align: center;
-      font-size: .85rem;
-    }
-
-    dialog {
-      width: min(92vw, 520px);
-      padding: 0;
-      border: 1px solid var(--line);
-      border-radius: 0;
-      color: var(--ink);
-      background: var(--ivory);
-      box-shadow: var(--shadow);
-    }
-
-    dialog::backdrop { background: rgba(93, 65, 64, .28); backdrop-filter: blur(3px); }
-    .dialog-inner { padding: clamp(1.7rem, 6vw, 2.7rem); }
-    .dialog-inner h2 { margin: 0 0 .8rem; font-family: Georgia, "Times New Roman", serif; font-size: 2rem; font-weight: 400; }
-    .dialog-inner p { color: #755b58; }
-    .dialog-actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.5rem; }
-    .button.secondary { color: var(--ink); background: transparent; }
-
-    .rsvp-form { display: grid; gap: 1rem; margin-top: 1.5rem; }
+    .rsvp-form { display: grid; gap: 1rem; margin: 0; }
     .rsvp-form label { display: grid; gap: .4rem; color: #755b58; font-size: .85rem; font-weight: 700; }
-    .rsvp-form input, .rsvp-form select {
+    .attendance-field { margin: 0; padding: 0; border: 0; }
+    .attendance-field legend { margin-bottom: .55rem; color: #755b58; font-size: .85rem; font-weight: 700; }
+    .attendance-options { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; }
+    .attendance-options label { position: relative; display: block; cursor: pointer; }
+    .attendance-options input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+    .attendance-options span {
+      display: grid;
+      min-height: 3rem;
+      place-items: center;
+      padding: .6rem .75rem;
+      border: 1px solid var(--line);
+      border-radius: .35rem;
+      background: rgba(255, 253, 251, .68);
+      color: var(--ink);
+      font-size: .9rem;
+      text-align: center;
+      transition: background .2s ease, border-color .2s ease, color .2s ease;
+    }
+    .attendance-options input:checked + span { border-color: #7d3135; background: #7d3135; color: #fffdfb; }
+    .attendance-options input:focus-visible + span { outline: 3px solid var(--gold); outline-offset: 3px; }
+    .rsvp-form input[type="text"] {
       width: 100%;
       min-height: 3.2rem;
       padding: .75rem 1rem;
@@ -428,43 +381,39 @@
       background: #fffaf7;
       font: inherit;
     }
-    .rsvp-form option { color: var(--ink); }
-    .form-status { min-height: 1.5em; margin: 0 !important; color: #9b6f6b !important; }
-
-    @keyframes reveal {
-      from { opacity: 0; transform: translateY(16px); }
-      to { opacity: 1; transform: translateY(0); }
+    footer {
+      padding: 2.2rem 1.25rem;
+      border-top: 1px solid rgba(238, 211, 182, .28);
+      background: #f8eae5;
+      color: #8d716c;
+      text-align: center;
+      font-size: .85rem;
     }
 
     @media (max-width: 900px), (hover: none) and (pointer: coarse) {
       .hero { min-height: 95svh; padding: 1rem; }
       .hero-card { padding-block: 3rem; }
       .language-switcher { top: .8rem; right: .8rem; }
-      .intro, .rsvp { grid-template-columns: 1fr; }
+      .rsvp { grid-template-columns: 1fr; }
       .details { grid-template-columns: 1fr; }
       .detail-card { min-height: auto; }
       .detail-card .number { margin-bottom: 1.1rem; }
       .section { width: min(100% - 2rem, 1120px); }
-      .countdown { width: min(100% - 1.4rem, 1120px); }
     }
 
     html.touch-layout .hero { min-height: 95svh; padding: 1rem; }
     html.touch-layout .hero-card { padding-block: 3rem; }
     html.touch-layout .language-switcher { top: .8rem; right: .8rem; }
-    html.touch-layout .intro,
     html.touch-layout .rsvp { grid-template-columns: 1fr; }
     html.touch-layout .details { grid-template-columns: 1fr; }
     html.touch-layout .detail-card { min-height: auto; }
     html.touch-layout .detail-card .number { margin-bottom: 1.1rem; }
     html.touch-layout .section { width: min(100% - 2rem, 1120px); }
-    html.touch-layout .countdown { width: min(100% - 1.4rem, 1120px); }
 
     @media (max-width: 420px) {
       h1 { font-size: clamp(3.2rem, 19vw, 4.6rem); }
       .date-lockup { gap: .7rem; }
       .date-lockup time { letter-spacing: .09em; }
-      .countdown-grid { gap: .2rem; }
-      .countdown-item span { font-size: .61rem; letter-spacing: .07em; }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -487,74 +436,61 @@
       <button type="button" data-language="en" aria-pressed="false">EN</button>
     </nav>
     <div class="hero-card">
-      <p class="eyebrow" data-i18n="eyebrow">Приглашение на свадьбу наших детей</p>
-      <p class="hosts" data-i18n="hosts">Организаторы: Жанар и Нуркен</p>
-      <h1 id="page-title"><span data-i18n="firstName">Кайрат</span> <span class="ampersand" data-i18n="nameJoiner">&amp;</span> <span data-i18n="secondName">Бекзат</span></h1>
+      <p class="eyebrow" data-i18n="eyebrow">Құрметті қонақтар!</p>
+      <h1 id="page-title"><span data-i18n="firstName">Қайрат</span> <span class="ampersand" data-i18n="nameJoiner">&amp;</span> <span data-i18n="secondName">Бекзат</span></h1>
+      <p class="betashar-copy" data-i18n="invitationCopy">Сіздерді ұлымыз Қайрат пен келініміз Бекзаттың беташар рәсіміне арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!</p>
+      <p class="hosts" data-i18n="hosts">Той иелері: Жанар мен Нұркен</p>
+      <p class="hero-note" data-i18n="heroNote">Қуанышымызға ортақ болыңыздар!</p>
       <div class="date-lockup">
-        <time datetime="2026-11-28" data-i18n="heroDate">28 ноября 2026</time>
+        <time datetime="2026-11-28" data-i18n="heroDate">28 қараша 2026</time>
       </div>
-      <p class="hero-note" data-i18n="heroNote">Будем счастливы разделить этот особенный день в кругу родных и друзей.</p>
-      <button class="button js-rsvp" type="button">
-        <span data-i18n="heroRsvp">Подтвердить участие</span>
+      <a class="button" href="#rsvp">
+        <span data-i18n="heroRsvp">Қатысатыныңызды растаңыз</span>
         <svg aria-hidden="true" viewBox="0 0 20 20" fill="none"><path d="M4 10h11M11 6l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
+      </a>
     </div>
     <a class="scroll-cue" href="#invitation" data-i18n="detailsCue">Подробнее ↓</a>
   </header>
 
   <main id="invitation">
-    <section class="section intro" aria-labelledby="invitation-title">
-      <p class="section-label" data-i18n="invitationLabel">Приглашение</p>
-      <div>
-        <h2 id="invitation-title" data-i18n="invitationTitle">Разделим радость этого дня вместе.</h2>
-        <p class="lead" data-i18n="invitationCopy">Дорогие родные и друзья! С большой радостью приглашаем вас на свадебное торжество наших детей, которое состоится в субботу, 28 ноября 2026 года. Будем счастливы видеть вас рядом в этот особенный день.</p>
-      </div>
-    </section>
-
-    <section class="countdown-wrap" aria-label="До свадьбы" data-i18n-aria="countdownAria">
-      <div class="countdown">
-        <p data-i18n="countdownTitle">До свадебного торжества</p>
-        <div class="countdown-grid" aria-live="polite">
-          <div class="countdown-item"><strong id="days">—</strong><span data-i18n="days">Дней</span></div>
-          <div class="countdown-item"><strong id="hours">—</strong><span data-i18n="hours">Часов</span></div>
-          <div class="countdown-item"><strong id="minutes">—</strong><span data-i18n="minutes">Минут</span></div>
-          <div class="countdown-item"><strong id="seconds">—</strong><span data-i18n="seconds">Секунд</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section details" aria-label="Детали свадьбы" data-i18n-aria="detailsAria">
+    <section class="section details" aria-label="Беташар туралы мәлімет" data-i18n-aria="detailsAria">
       <article class="detail-card">
-        <span class="number" data-i18n="dateLabel">01 / ДАТА</span>
-        <h3 data-i18n="saturday">Суббота</h3>
+        <span class="number" data-i18n="dateLabel">01 / КҮНІ</span>
+        <h3 data-i18n="dateTitle">Беташар</h3>
         <p data-i18n="detailDate">28 ноября 2026</p>
       </article>
       <article class="detail-card">
-        <span class="number" data-i18n="timeLabel">02 / ВРЕМЯ</span>
+        <span class="number" data-i18n="timeLabel">02 / УАҚЫТЫ</span>
         <h3 data-i18n="timeTitle">16:00</h3>
-        <p data-i18n="timeCopy">Начало свадебного торжества.</p>
+        <p data-i18n="timeCopy">Беташар рәсімінің басталуы</p>
       </article>
       <article class="detail-card">
-        <span class="number" data-i18n="placeLabel">03 / МЕСТО</span>
+        <span class="number" data-i18n="placeLabel">03 / ӨТЕТІН ОРНЫ</span>
         <h3 data-i18n="placeTitle">Sultan Hall</h3>
         <p data-i18n="placeCopy">микрорайон Хан-Тенгри, проспект Дулати 127</p>
         <a class="venue-link" href="https://go.2gis.com/eTAwy" target="_blank" rel="noopener noreferrer"><span data-i18n="mapLink">Открыть в 2GIS</span> ↗</a>
       </article>
     </section>
 
-    <section class="rsvp-shell" aria-labelledby="rsvp-title">
+    <section class="rsvp-shell" id="rsvp" aria-labelledby="rsvp-title">
       <div class="section rsvp">
         <div>
-          <p class="section-label" data-i18n="replyLabel">Просим ответить</p>
-          <h2 id="rsvp-title" data-i18n="rsvpTitle">Вы будете с нами?</h2>
-          <p class="rsvp-copy" data-i18n="rsvpCopy">Пожалуйста, сообщите, сможете ли вы прийти и кто будет вместе с вами.</p>
+              <p class="section-label" data-i18n="replyLabel">Жауабыңызды күтеміз</p>
+          <h2 id="rsvp-title" data-i18n="rsvpTitle">Қатысуыңызды растап, бізге хабарлаңыз</h2>
+          <p class="rsvp-copy" data-i18n="rsvpCopy">Сіздің келуіңіз біз үшін өте маңызды!</p>
         </div>
-        <div class="rsvp-card">
-          <h3 data-i18n="responseTitle">Ваш ответ</h3>
-          <p data-i18n="responseCopy">В форме можно указать, придёте ли вы, имена гостей, а также пожелания по питанию или доступности.</p>
-          <button class="button js-rsvp" type="button" data-i18n="openRsvp">Открыть форму RSVP</button>
-          <p class="privacy" data-i18n="privacy">Ответы сохраняются в приватной Google-таблице организаторов и используются только для подготовки свадьбы.</p>
-        </div>
+        <form class="rsvp-form" id="rsvp-form">
+          <fieldset class="attendance-field">
+            <legend data-i18n="attendanceLabel">Қатысасыз ба?</legend>
+            <div class="attendance-options">
+              <label><input type="radio" name="attendance" value="yes" required><span data-i18n="attendanceYes">Келемін</span></label>
+              <label><input type="radio" name="attendance" value="no" required><span data-i18n="attendanceNo">Келе алмаймын</span></label>
+            </div>
+          </fieldset>
+          <label><span data-i18n="guestNameLabel">Аты-жөніңіз</span><input type="text" name="guestName" required autocomplete="name" data-i18n-placeholder="guestNamePlaceholder" placeholder="Аты-жөніңіз"></label>
+          <p class="form-status" id="form-status" role="status"></p>
+          <button class="button" type="submit" data-i18n="submitRsvp">Жіберу</button>
+        </form>
       </div>
     </section>
   </main>
@@ -563,91 +499,56 @@
     <span class="serif">28 · 11 · 2026</span>
   </footer>
 
-  <dialog id="rsvp-dialog" aria-labelledby="dialog-title">
-    <div class="dialog-inner">
-      <h2 id="dialog-title" data-i18n="dialogTitle">Остался один шаг</h2>
-      <p data-i18n="dialogCopy1">Пожалуйста, заполните форму, чтобы мы знали, сможете ли вы прийти.</p>
-      <form class="rsvp-form" id="rsvp-form">
-        <label><span data-i18n="guestNameLabel">Ваше имя</span><input name="guestName" required autocomplete="name" data-i18n-placeholder="guestNamePlaceholder" placeholder="Введите ваше имя"></label>
-        <label><span data-i18n="companionLabel">Имя сопровождающего</span><input name="companionName" autocomplete="off" data-i18n-placeholder="companionPlaceholder" placeholder="Если будете не одни"></label>
-        <label><span data-i18n="attendanceLabel">Ваш ответ</span><select name="attendance" required><option value="" data-i18n="attendancePlaceholder">Выберите ответ</option><option value="yes" data-i18n="attendanceYes">С радостью приду</option><option value="no" data-i18n="attendanceNo">К сожалению, не смогу</option></select></label>
-        <p class="form-status" id="form-status" role="status"></p>
-        <div class="dialog-actions">
-          <button class="button" type="submit" data-i18n="submitRsvp">Отправить</button>
-          <button class="button secondary" type="button" id="close-dialog" data-i18n="close">Закрыть</button>
-        </div>
-      </form>
-    </div>
-  </dialog>
-
   <script>
     const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbzYpRVorA8nKCPpBWHEoF6d6zzWrE-D6BQWpWQjiohaz6fhCkSnt41HrADuMC-OXVRJ/exec";
 
     const translations = {
       ru: {
-        pageTitle: "Кайрат & Бекзат · 28 ноября 2026",
-        pageDescription: "Приглашаем на свадьбу наших детей — Кайрата и Бекзат, 28 ноября 2026 года.",
+        pageTitle: "Кайрат & Бекзат · Беташар · 28 ноября 2026",
+        pageDescription: "Приглашаем на беташар Кайрата и Бекзат 28 ноября 2026 года.",
         firstName: "Кайрат", nameJoiner: "&", secondName: "Бекзат",
         skip: "Перейти к приглашению", languageLabel: "Выбор языка",
-        eyebrow: "Приглашение на свадьбу наших детей", hosts: "Организаторы: Жанар и Нуркен", heroDate: "28 ноября 2026",
-        heroNote: "Будем счастливы разделить этот особенный день в кругу родных и друзей.", heroRsvp: "Подтвердить участие", detailsCue: "Подробнее ↓",
-        invitationLabel: "Приглашение", invitationTitle: "Разделим радость этого дня вместе.",
-        invitationCopy: "Дорогие гости! Приглашаем вас стать дорогими гостями на свадебном торжестве наших детей — Кайрата и Бекзат, которое состоится в субботу, 28 ноября 2026 года.",
-        countdownAria: "До свадьбы", countdownTitle: "До свадебного торжества", days: "Дней", hours: "Часов", minutes: "Минут", seconds: "Секунд",
-        detailsAria: "Детали свадьбы", dateLabel: "01 / ДАТА", saturday: "Суббота", detailDate: "28 ноября 2026",
-        timeLabel: "02 / ВРЕМЯ", timeTitle: "16:00", timeCopy: "Начало свадебного торжества.",
+        eyebrow: "Дорогие гости!", hosts: "Хозяева торжества: Жанар и Нуркен", heroDate: "28 ноября 2026",
+        heroNote: "Будем рады разделить с вами эту радость!", heroRsvp: "Подтвердить участие", detailsCue: "Подробнее ↓",
+        invitationCopy: "Приглашаем вас на беташар нашего сына Кайрата и невестки Бекзат. Будем рады видеть вас среди почётных гостей за нашим дастарханом!",
+        detailsAria: "Детали беташара", dateLabel: "01 / ДАТА", dateTitle: "Беташар", detailDate: "28 ноября 2026",
+        timeLabel: "02 / ВРЕМЯ", timeTitle: "16:00", timeCopy: "Начало обряда беташар.",
         placeLabel: "03 / МЕСТО", placeTitle: "Sultan Hall", placeCopy: "микрорайон Хан-Тенгри, проспект Дулати 127", mapLink: "Открыть в 2GIS",
-        replyLabel: "Просим ответить", rsvpTitle: "Вы будете с нами?", rsvpCopy: "Пожалуйста, сообщите, сможете ли вы прийти и кто будет вместе с вами.",
-        responseTitle: "Ваш ответ", responseCopy: "В форме можно указать, придёте ли вы, имена гостей, а также пожелания по питанию или доступности.", openRsvp: "Открыть форму RSVP",
-        privacy: "Ответы сохраняются в приватной Google-таблице организаторов и используются только для подготовки свадьбы.",
-        dialogTitle: "Ваш ответ", dialogCopy1: "Пожалуйста, заполните форму, чтобы мы знали, сможете ли вы прийти.",
-        dialogCopy2: "После подключения каждый ответ автоматически появится в Google Таблицах.", close: "Закрыть",
-        guestNameLabel: "Ваше имя", guestNamePlaceholder: "Введите ваше имя", companionLabel: "Имя сопровождающего", companionPlaceholder: "Если будете не одни",
-        attendanceLabel: "Ваш ответ", attendancePlaceholder: "Выберите ответ", attendanceYes: "С радостью приду", attendanceNo: "К сожалению, не смогу", submitRsvp: "Отправить",
+        replyLabel: "Просим ответить", rsvpTitle: "Подтвердите участие и сообщите нам", rsvpCopy: "Ваше присутствие очень важно для нас!",
+        guestNameLabel: "Ваше имя", guestNamePlaceholder: "Введите ваше имя",
+        attendanceLabel: "Вы придёте?", attendanceYes: "Приду", attendanceNo: "Не смогу прийти", submitRsvp: "Отправить",
         formMissingEndpoint: "Форма еще не подключена к таблице.", formSending: "Отправляем...", formSuccess: "Спасибо! Ваш ответ сохранен.", formError: "Не удалось отправить ответ. Попробуйте еще раз."
       },
       kk: {
-        pageTitle: "Қайрат & Бекзат · 28 қараша 2026",
-        pageDescription: "Балаларымыз Қайрат пен Бекзаттың 2026 жылғы 28 қарашада өтетін үйлену тойына шақырамыз.",
+        pageTitle: "Қайрат & Бекзат · Беташар · 28 қараша 2026",
+        pageDescription: "Қайрат пен Бекзаттың беташарына шақырамыз. 2026 жылғы 28 қараша.",
         firstName: "Қайрат", nameJoiner: "&", secondName: "Бекзат",
         skip: "Шақыруға өту", languageLabel: "Тілді таңдау",
-        eyebrow: "Балаларымыздың үйлену тойына шақыру", hosts: "Той иелері: Жанар мен Нұркен", heroDate: "28 қараша 2026",
-        heroNote: "Осы ерекше күнді туған-туыс пен достардың ортасында бірге атап өтуге қуаныштымыз.", heroRsvp: "Қатысатыныңызды растау", detailsCue: "Толығырақ ↓",
-        invitationLabel: "Шақыру", invitationTitle: "Қуанышты күнді бірге қарсы алайық.",
-        invitationCopy: "Құрметті қонақтар! Сіздерді балаларымыз Қайрат пен Бекзаттың 2026 жылғы 28 қараша, сенбі күні өтетін үйлену тойына арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!",
-        countdownAria: "Тойға дейінгі уақыт", countdownTitle: "Той салтанатына дейін", days: "Күн", hours: "Сағат", minutes: "Минут", seconds: "Секунд",
-        detailsAria: "Той туралы мәлімет", dateLabel: "01 / КҮНІ", saturday: "Сенбі", detailDate: "28 қараша 2026",
-        timeLabel: "02 / УАҚЫТЫ", timeTitle: "16:00", timeCopy: "Үйлену тойының басталу уақыты.",
+        eyebrow: "Құрметті қонақтар!", hosts: "Той иелері: Жанар мен Нұркен", heroDate: "28 қараша 2026",
+        heroNote: "Қуанышымызға ортақ болыңыздар!", heroRsvp: "Қатысатыныңызды растаңыз", detailsCue: "Толығырақ ↓",
+        invitationCopy: "Сіздерді ұлымыз Қайрат пен келініміз Бекзаттың беташар рәсіміне арналған ақ дастарханымыздың қадірлі қонағы болуға шақырамыз!",
+        detailsAria: "Беташар туралы мәлімет", dateLabel: "01 / КҮНІ", dateTitle: "Беташар", detailDate: "28 қараша 2026",
+        timeLabel: "02 / УАҚЫТЫ", timeTitle: "16:00", timeCopy: "Беташар рәсімінің басталуы",
         placeLabel: "03 / ӨТЕТІН ОРНЫ", placeTitle: "Sultan Hall", placeCopy: "Хан-Тәңірі шағынауданы, Дулати даңғылы, 127", mapLink: "2GIS картасын ашу",
-        replyLabel: "Жауабыңызды күтеміз", rsvpTitle: "Бізбен бірге боласыз ба?", rsvpCopy: "Келе алатыныңызды және сізбен бірге кім болатынын хабарлаңыз.",
-        responseTitle: "Сіздің жауабыңыз", responseCopy: "Формада қатысатыныңызды, қонақтардың есімдерін және тағамға немесе қолжетімділікке қатысты тілектеріңізді көрсете аласыз.", openRsvp: "RSVP формасын ашу",
-        privacy: "Жауаптар ұйымдастырушылардың жабық Google кестесінде сақталып, тек тойды дайындау үшін қолданылады.",
-        dialogTitle: "Сіздің жауабыңыз", dialogCopy1: "Келе алатыныңызды білуіміз үшін форманы толтырыңыз.",
-        dialogCopy2: "Сілтеме қосылғаннан кейін әр жауап Google кестесіне автоматты түрде жазылады.", close: "Жабу",
-        guestNameLabel: "Сіздің атыңыз", guestNamePlaceholder: "Атыңызды жазыңыз", companionLabel: "Серігіңіздің аты", companionPlaceholder: "Бірге келетін болсаңыз",
-        attendanceLabel: "Сіздің жауабыңыз", attendancePlaceholder: "Жауапты таңдаңыз", attendanceYes: "Қуана қатысамын", attendanceNo: "Өкінішке қарай, келе алмаймын", submitRsvp: "Жіберу",
+        replyLabel: "Жауабыңызды күтеміз", rsvpTitle: "Қатысуыңызды растап, бізге хабарлаңыз", rsvpCopy: "Сіздің келуіңіз біз үшін өте маңызды!",
+        guestNameLabel: "Аты-жөніңіз", guestNamePlaceholder: "Аты-жөніңізді жазыңыз",
+        attendanceLabel: "Қатысасыз ба?", attendanceYes: "Келемін", attendanceNo: "Келе алмаймын", submitRsvp: "Жіберу",
         formMissingEndpoint: "Форма әзірге кестеге қосылмаған.", formSending: "Жіберілуде...", formSuccess: "Рақмет! Жауабыңыз сақталды.", formError: "Жауапты жіберу мүмкін болмады. Қайта көріңіз."
       },
       en: {
-        pageTitle: "Kairat & Bekzat · 28 November 2026",
-        pageDescription: "We invite you to celebrate the wedding of our children, Kairat and Bekzat, on 28 November 2026.",
+        pageTitle: "Kairat & Bekzat · Betashar · 28 November 2026",
+        pageDescription: "Join us for the Betashar ceremony for Kairat and Bekzat on 28 November 2026.",
         firstName: "Kairat", nameJoiner: "&", secondName: "Bekzat",
         skip: "Skip to invitation", languageLabel: "Choose language",
-        eyebrow: "An invitation to our children’s wedding", hosts: "Hosts: Zhanar and Nurken", heroDate: "28 November 2026",
-        heroNote: "We would be delighted to share this special day with family and friends.", heroRsvp: "Confirm attendance", detailsCue: "Details ↓",
-        invitationLabel: "The invitation", invitationTitle: "Let us share the joy of this day together.",
-        invitationCopy: "Dear guests, we warmly invite you to be our honoured guests at the wedding celebration of our children, Kairat and Bekzat, on Saturday, 28 November 2026.",
-        countdownAria: "Countdown to the wedding", countdownTitle: "Until the wedding celebration", days: "Days", hours: "Hours", minutes: "Minutes", seconds: "Seconds",
-        detailsAria: "Wedding details", dateLabel: "01 / DATE", saturday: "Saturday", detailDate: "28 November 2026",
-        timeLabel: "02 / TIME", timeTitle: "16:00", timeCopy: "The wedding celebration begins.",
+        eyebrow: "Dear guests!", hosts: "Hosts: Zhanar and Nurken", heroDate: "28 November 2026",
+        heroNote: "We would be delighted to share this joy with you!", heroRsvp: "Confirm attendance", detailsCue: "Details ↓",
+        invitationCopy: "We warmly invite you to the Betashar ceremony for our son Kairat and daughter-in-law Bekzat. We would be honoured by your presence at our celebration.",
+        detailsAria: "Betashar details", dateLabel: "01 / DATE", dateTitle: "Betashar", detailDate: "28 November 2026",
+        timeLabel: "02 / TIME", timeTitle: "16:00", timeCopy: "The Betashar ceremony begins.",
         placeLabel: "03 / PLACE", placeTitle: "Sultan Hall", placeCopy: "Khan Tengri microdistrict, 127 Dulati Avenue", mapLink: "Open in 2GIS",
-        replyLabel: "Kindly reply", rsvpTitle: "Will you be there?", rsvpCopy: "Please let us know whether you can attend and who will be joining you.",
-        responseTitle: "Your response", responseCopy: "The form asks whether you can attend, who will join you, and any dietary or accessibility requirements.", openRsvp: "Open RSVP form",
-        privacy: "Responses are saved in the hosts’ private Google Sheet and used only to organise the wedding.",
-        dialogTitle: "Your response", dialogCopy1: "Please fill in the form so we know whether you can attend.",
-        dialogCopy2: "Once connected, every response will appear automatically in Google Sheets.", close: "Close",
-        guestNameLabel: "Your name", guestNamePlaceholder: "Enter your name", companionLabel: "Companion's name", companionPlaceholder: "If someone is joining you",
-        attendanceLabel: "Your response", attendancePlaceholder: "Choose a response", attendanceYes: "Happily attending", attendanceNo: "Sadly, I cannot attend", submitRsvp: "Send",
+        replyLabel: "Kindly reply", rsvpTitle: "Please confirm your attendance", rsvpCopy: "Your presence means a lot to us!",
+        guestNameLabel: "Your name", guestNamePlaceholder: "Enter your name",
+        attendanceLabel: "Will you attend?", attendanceYes: "I will attend", attendanceNo: "I cannot attend", submitRsvp: "Send",
         formMissingEndpoint: "The form is not connected to the sheet yet.", formSending: "Sending...", formSuccess: "Thank you! Your response was saved.", formError: "We could not send your response. Please try again."
       }
     };
@@ -658,6 +559,10 @@
       document.documentElement.lang = locale;
       document.title = copy.pageTitle;
       document.querySelector('meta[name="description"]').setAttribute("content", copy.pageDescription);
+      document.querySelector('meta[property="og:title"]').setAttribute("content", copy.pageTitle);
+      document.querySelector('meta[property="og:description"]').setAttribute("content", copy.pageDescription);
+      document.querySelector('meta[name="twitter:title"]').setAttribute("content", copy.pageTitle);
+      document.querySelector('meta[name="twitter:description"]').setAttribute("content", copy.pageDescription);
       document.querySelectorAll("[data-i18n]").forEach((element) => {
         const value = copy[element.dataset.i18n];
         if (value) element.textContent = value;
@@ -685,17 +590,6 @@
     if (preferredLanguage === "kk" || preferredLanguage === "ru" || preferredLanguage === "en") setLanguage(preferredLanguage);
     else setLanguage("kk");
 
-    const dialog = document.getElementById("rsvp-dialog");
-    document.querySelectorAll(".js-rsvp").forEach((button) => {
-      button.addEventListener("click", () => {
-        dialog.showModal();
-      });
-    });
-    document.getElementById("close-dialog").addEventListener("click", () => dialog.close());
-    dialog.addEventListener("click", (event) => {
-      if (event.target === dialog) dialog.close();
-    });
-
     document.getElementById("rsvp-form").addEventListener("submit", async (event) => {
       event.preventDefault();
       const form = event.currentTarget;
@@ -715,29 +609,6 @@
       }
     });
 
-    const weddingDate = new Date("2026-11-28T16:00:00");
-    const fields = {
-      days: document.getElementById("days"),
-      hours: document.getElementById("hours"),
-      minutes: document.getElementById("minutes"),
-      seconds: document.getElementById("seconds")
-    };
-
-    function updateCountdown() {
-      const remaining = Math.max(0, weddingDate.getTime() - Date.now());
-      const values = {
-        days: Math.floor(remaining / 86400000),
-        hours: Math.floor((remaining / 3600000) % 24),
-        minutes: Math.floor((remaining / 60000) % 60),
-        seconds: Math.floor((remaining / 1000) % 60)
-      };
-      Object.entries(values).forEach(([key, value]) => {
-        fields[key].textContent = String(value).padStart(2, "0");
-      });
-    }
-
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
   </script>
 </body>
 </html>
